@@ -1,0 +1,377 @@
+#maki{
+  padding: 100px;
+  font-family: 'Pacifico', cursive;
+  /*font-weight: bold;*/
+  font-size: 195px;
+  transform: scaleX(-1);
+}
+
+/* latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Space Mono'), local('SpaceMono-Regular'), url(http://fonts.gstatic.com/s/spacemono/v1/adVweg3BJhE6r8jYmXseHfk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(http://fonts.gstatic.com/s/spacemono/v1/vdpMRWfyjfCvDYTz00NEPIWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* Universal Styles */
+
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Space Mono'), local('SpaceMono-Regular'), url(https://fonts.gstatic.com/s/spacemono/v1/adVweg3BJhE6r8jYmXseHQzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(https://fonts.gstatic.com/s/spacemono/v1/vdpMRWfyjfCvDYTz00NEPGaVI6zN22yiurzcBKxPjFE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/*general*/
+html{
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: 'Space Mono', monospace;
+}
+
+.page_ruler{
+  width: 960px;
+  margin: auto;
+}
+
+/*header*/
+header{
+  color: white;
+  height: 31rem;
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid red;
+}
+
+.header_line{
+  display: flex;
+  justify-content: space-between;
+  background-color: cadetblue;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+}
+
+  /*logo*/
+.container_logo{
+  display: inline-flex;
+  align-items: center;
+}
+
+.container_logo img{
+  height: 1.5rem;
+  padding-left: 2rem;
+}
+
+.container_logo p{
+  padding-left: 1rem;
+}
+
+  /*navigation*/
+nav {
+  display: inline-flex;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+a:last-child{
+  padding-right: 2rem;
+}
+
+.menu{
+  display: inline-flex;
+}
+
+  /*banner*/
+.banner{
+  text-align: right;
+}
+
+
+.banner h1{
+  display: inline-block;
+  background-color: white;
+  text-transform: uppercase;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  padding: 1.5rem 5rem;
+  margin-right: -2rem;
+}
+
+/*portfolio*/
+.container_portfolio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  height: 8rem;
+  border: 1px solid blue;
+}
+
+.thumb{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  height: 8rem;
+  border: 1px solid red;
+}
+
+.thumb div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 5rem;
+    width: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    border: 1px solid green;
+}
+
+.thumb img{
+   width: auto;
+   height: auto;
+   max-width: 100%;
+   max-height: 100%;
+   border: 1px solid grey;
+}
+
+.thumb p{
+  display: inline-flex;
+  text-align: center;
+}
+
+/*info*/
+.container_info{
+  display: inline-block;
+  width: 100%;
+  /*border: 1px solid brown;*/
+}
+
+.container_info div{
+  display: inline-block;
+  vertical-align: top;
+  width: 35%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5rem;
+  /*border: 1px solid black;*/
+}
+
+.container_info div:first-child{
+  padding-left: 10%;
+  padding-right: 5%;
+}
+
+.container_info div:last-child{
+  padding-left: 0%;
+  padding-right: 10%;
+}
+
+.container_info h1{
+  display: inline-block;
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  width: 10rem;
+  padding: 0.5rem;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.container_info p{
+  display: inline-block;
+}
+
+/*footer*/
+footer{
+  background-color: azure;
+}
+
+footer .container_img{
+  display: inline-block;
+  width: 9.5rem;
+  margin: auto;
+  border: 2px solid red;
+}
+
+footer img{
+  display: inline-block;
+  height: 1.5rem;
+  padding: 4rem;
+  padding-right: 1rem;
+  border: 1px solid green;
+}
+
+footer p{
+  display: inline-block;
+  position: absolute;
+  margin-top: 4.2rem;;
+  /*vertical-align: middle; <- this does not work!*/
+  border: 1px solid blue;
+}
+
+/*media queries*/
+@media only screen and (min-width: 1024px){
+  .hidden_large {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1024px){
+  .hidden_medium {
+    display: none;
+  }
+
+  .page_ruler{
+    width: 100%;
+  }
+
+  /*header*/
+  header{
+    height: 22rem;
+  }
+
+  .header_line{
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+  }
+
+  /*banner*/
+  .banner h1{
+    font-size: 1.33rem;
+    line-height: 1.2rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hidden_small {
+    display: none;
+  }
+
+  /*header*/
+  header{
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .header_line{
+    margin-bottom: 9rem;
+    /*background-color: orange;*/
+  }
+
+  /*this has to be re-used to make it visible, the upper media rule makes this display to be none, it has to be overwritten*/
+  .header_line .hidden_medium {
+    display:inline-block;
+  }
+
+  /*banner*/
+  .banner{
+    width: 100%;
+    text-align: center;
+    background: white;
+  }
+
+  .banner h1{
+    font-size: 1rem;
+    padding: 1rem 0rem;
+  }
+
+  /*portfolio*/
+  .container_portfolio{
+    flex-direction: column;
+    height: auto;
+    /*margin: 2.23rem;*/
+  }
+
+  .thumb{
+    height: auto;
+    width: auto;
+    margin: 1.54rem;
+  }
+
+  .thumb div{
+      height: auto;
+      width: auto;
+  }
+
+  .thumb img{
+     max-width: 5rem;
+     max-height: 5rem;
+  }
+
+  /*info*/
+  .container_info div{
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .container_info div:first-child, .container_info div:last-child{
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .container_info h1{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .container_info p{
+    font-size: 0.77rem;
+  }
+
+  /*footer*/
+  footer{
+    background-color: white;
+  }
+
+  footer .container_img{
+    display: block;
+    width: 12.5rem;
+  }
+
+  footer img{
+    display: inline-block;
+    text-align: center;
+    padding-right: 4rem;
+  }
+
+  footer p{
+    display: none;
+  }
+}
