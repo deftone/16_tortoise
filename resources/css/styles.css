@@ -1,53 +1,8 @@
-#maki{
-  padding: 100px;
-  font-family: 'Pacifico', cursive;
-  /*font-weight: bold;*/
-  font-size: 195px;
-  transform: scaleX(-1);
-}
-
-/* latin */
-@font-face {
-  font-family: 'Space Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Space Mono'), local('SpaceMono-Regular'), url(http://fonts.gstatic.com/s/spacemono/v1/adVweg3BJhE6r8jYmXseHfk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Space Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(http://fonts.gstatic.com/s/spacemono/v1/vdpMRWfyjfCvDYTz00NEPIWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-
-/* Universal Styles */
-
-@font-face {
-  font-family: 'Space Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Space Mono'), local('SpaceMono-Regular'), url(https://fonts.gstatic.com/s/spacemono/v1/adVweg3BJhE6r8jYmXseHQzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-
-@font-face {
-  font-family: 'Space Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(https://fonts.gstatic.com/s/spacemono/v1/vdpMRWfyjfCvDYTz00NEPGaVI6zN22yiurzcBKxPjFE.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-
 /*general*/
 html{
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.4;
-  font-family: 'Space Mono', monospace;
 }
 
 .page_ruler{
@@ -63,7 +18,7 @@ header{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border: 1px solid red;
+  border-top: 1px solid transparent;
 }
 
 .header_line{
@@ -136,7 +91,7 @@ a:last-child{
   margin-top: 3rem;
   margin-bottom: 3rem;
   height: 8rem;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 .thumb{
@@ -144,7 +99,7 @@ a:last-child{
   flex-direction: column;
   align-items: center;
   height: 8rem;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .thumb div{
@@ -156,7 +111,7 @@ a:last-child{
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 1rem;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
 }
 
 .thumb img{
@@ -164,7 +119,7 @@ a:last-child{
    height: auto;
    max-width: 100%;
    max-height: 100%;
-   border: 1px solid grey;
+   /*border: 1px solid grey;*/
 }
 
 .thumb p{
@@ -223,7 +178,7 @@ footer .container_img{
   display: inline-block;
   width: 9.5rem;
   margin: auto;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 
 footer img{
@@ -231,7 +186,7 @@ footer img{
   height: 1.5rem;
   padding: 4rem;
   padding-right: 1rem;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 
 footer p{
@@ -239,7 +194,7 @@ footer p{
   position: absolute;
   margin-top: 4.2rem;;
   /*vertical-align: middle; <- this does not work!*/
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 /*media queries*/
